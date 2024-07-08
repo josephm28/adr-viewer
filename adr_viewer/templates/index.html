@@ -14,16 +14,23 @@
 
         <style type="text/css">
             body {
-                display: grid;
+                display: block;
                 width: auto;
                 height: auto;
-                align-items: center;
-                justify-items: center;
-                grid-template-rows: 2fr minmax(80%, auto) 2fr;
+                margin: 0 5%;
+            }
+
+            header {
+                text-align: center;
             }
 
             @media only screen and (min-width: 1025px) {
                 body {
+                    display: grid;
+                    margin: unset;
+                    align-items: center;
+                    justify-items: center;
+                    grid-template-rows: 2fr minmax(80%, auto) 2fr;
                     grid-template-columns: 1fr 3fr 1fr;
                 }
 
